@@ -72,26 +72,22 @@ h1 {
     position: relative;
 }
 
-#title::after {
+#title::after, #title::before {
     content: "";
     width: 30%;
     height: 5px;
     position: absolute;
-    right: 13%;
     background-color: #198754;
     top: 50%;
     border-radius: 10px;
 }
 
+#title::after {
+    right: 13%;
+}
+
 #title::before {
-    content: "";
-    width: 30%;
-    height: 5px;
-    position: absolute;
     left: 13%;
-    background-color: #198754;
-    top: 50%;
-    border-radius: 10px;
 }
 
 #aboutImage {
