@@ -102,6 +102,11 @@ h1 {
 #card {
     flex-basis: 23%;
     border-radius: 10px;
+    outline: 1px solid #198754;
+}
+
+#card:hover {
+    box-shadow: 3px 3px 8px 0 #198754, -3px -3px 8px 0 rgba(0, 0, 0, 0.7);
 }
 
 .cardImage {
