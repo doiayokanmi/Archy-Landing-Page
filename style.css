@@ -102,3 +102,23 @@ h1 {
 #aboutText {
     flex-basis: 60%;
 }
+
+#card {
+    flex-basis: 23%;
+    border-radius: 10px;
+}
+
+.cardImage {
+    height: 200px;
+    width: 200px;
+    border: 10px solid #198754;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardText {
+    height: 50%;
+}
