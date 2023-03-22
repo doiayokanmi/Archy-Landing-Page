@@ -9,7 +9,7 @@ html {
 }
 
 header {
-    height: 92vh;
+    height: 95vh;
     background-image: url(src/image/white-painted-wall-texture-background-min.jpg);
     background-size: cover;
     margin-top: 40px;
@@ -77,17 +77,18 @@ h1 {
     width: 30%;
     height: 5px;
     position: absolute;
-    background-color: #198754;
     top: 50%;
     border-radius: 10px;
 }
 
 #title::after {
     right: 13%;
+    background-image: linear-gradient(to right, #198754, #fff);
 }
 
 #title::before {
     left: 13%;
+    background-image: linear-gradient(to left, #198754, #fff);
 }
 
 #aboutImage {
@@ -106,7 +107,7 @@ h1 {
 }
 
 #card:hover {
-    box-shadow: 3px 3px 8px 0 #198754, -3px -3px 8px 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 3px 3px 8px 0 #198754, -3px -3px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .cardImage {
@@ -123,3 +124,39 @@ h1 {
 .cardText {
     height: 50%;
 }
+
+#portfolioCard {
+    display: flex;
+
+}
+
+#portfolioCard:hover {
+    box-shadow: 0 0 12px 0 #198754, 0 0 14px 0 #fff, 0 0 16px 0 #000;
+}
+
+#portCardImage {
+    flex-basis: 35%;
+}
+
+#portCardText {
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width: 480px) {
+    #card {
+        flex-basis: 100%;
+        border-radius: 10px;
+        flex-direction: column;
+        outline: 1px solid #198754;
+    }
+
+    #portfolioCard {
+        flex-direction: column;
+    }
+}
+
+
