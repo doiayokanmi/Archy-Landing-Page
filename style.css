@@ -147,10 +147,18 @@ h1 {
     justify-content: space-around;
 }
 
-#menu {
-    display: none;
+#form {
+    flex-basis: 50%;
 }
 
+textarea {
+    height: 100px;
+}
+
+#socialMedia i:hover {
+    color: #fff;
+    background-color: #198754;
+}
 
 @media screen and (max-width: 480px) {
     #card {
@@ -177,6 +185,18 @@ h1 {
         border-bottom: 4px solid #fff;
         margin-bottom: 3px;
         padding: 10px 0;
+    }
+
+    header {
+        height: 92vh;
+    }
+
+    #title::after {
+        right: 3%;
+    }
+    
+    #title::before {
+        left: 3%;
     }
 
 }
