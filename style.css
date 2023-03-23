@@ -10,10 +10,10 @@ html {
 }
 
 header {
+    margin-top: 40px;
     height: 95vh;
     background-image: url(src/image/white-painted-wall-texture-background-min.jpg);
     background-size: cover;
-    margin-top: 40px;
 }
 
 nav {
@@ -94,7 +94,6 @@ h1 {
 
 #aboutImage {
     flex-basis: 40%;
-    height: 60vh;
 }
 
 #aboutText {
@@ -172,43 +171,12 @@ h1 {
         display: none;
     }
 
-    nav {
-        padding-right: 0;
+    .nav-item {
+        border-bottom: 4px solid #fff;
+        margin-bottom: 3px;
+        padding: 10px 0;
     }
 
-    #anchorLink {
-        position: relative;
-        left: 0;
-        width: 100%;
-        bottom: -30px;
-    }
-
-    #navLink {
-        position: absolute;
-        display: flex;
-        right: -300px;
-        flex-direction: column;
-        background-color: #000;
-        width: 100%;
-        gap: 1em;
-        padding: 0;
-        transition: all 1s ease-in-out;
-    }
-
-    #navLink li {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-        border-bottom: 5px solid #fff;
-    }
-
-    #anchorLink ul li i {
-        margin-right: 10px;
-    }
-
-    #menu {
-        display: block;
-    }
 }
 
 
